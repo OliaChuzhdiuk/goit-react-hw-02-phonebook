@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import s from './ContactForm.module.css';
 
 class ContactForm extends Component {
@@ -11,7 +11,7 @@ class ContactForm extends Component {
     const { name, value } = e.currentTarget;
     this.setState({ [name]: value });
   };
-
+ 
   handleSubmit = e => {
     e.preventDefault();
     this.props.onSubmit(this.state);
@@ -57,5 +57,5 @@ class ContactForm extends Component {
     );
   }
 }
-
+console.log(ContactForm)
 export default ContactForm;

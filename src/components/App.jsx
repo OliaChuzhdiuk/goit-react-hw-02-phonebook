@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { nanoid } from 'nanoid';
 
 import ContactForm from './ContactForm/ContactForm';
@@ -66,7 +66,7 @@ class App extends Component {
   render() {
     const { filter } = this.state;
     return (
-      <Section className="container">
+      <Section className="section">
         <h1>Phone Book</h1>
         <ContactForm onSubmit={this.formSubmit} />
 
